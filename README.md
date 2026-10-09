@@ -14,7 +14,7 @@ Window Functions perform calculations across a set of rows while retaining indiv
 * **PARTITION BY**: Divides the query result set into partitions (subsets). The window function is applied to each partition separately, resetting calculations when crossing partition boundaries.
 * **ORDER BY**: Defines the logical sequence of rows within each partition. This is critical for sequential operations such as ranking items by price or calculating chronological running totals.
 
-### 3. Ranking Functions Breakdown (ROW_NUMBER, RANK, DENSE_RANK)
+### 3. Ranking Functions
 When ranking data with identical values (ties), each function behaves differently.
 * **ROW_NUMBER()**: Assigns a unique, sequential integer to every row starting at 1. It strictly avoids ties by assigning arbitrary order among identical values.
 * **RANK()**: Assigns identical ranks to duplicate values, but skips subsequent rank numbers to maintain position count.
@@ -25,7 +25,7 @@ A CTE creates a temporary named result set that exists only within the execution
 1. Break complex multi-stage calculations into readable steps.
 2. Bypassing SQL order-of-execution limitations.
 
-### 5. Time-Series Windowing (LAG, LEAST)
+### 5. Time-Series Windowing
 * **LAG(column, offset)**: Accesses data from a preceding row at a specified offset without requiring a self-JOIN. Used to pull previous month revenue for growth comparisons.
 * **LEAST(arg1, arg2, ...)**: Returns the smallest value among the provided arguments. Used to dynamically scale the moving average denominator during initial months (dividing by 1 in Month 1, 2 in Month 2, and capping at 3 for Month 3 onwards).
 
