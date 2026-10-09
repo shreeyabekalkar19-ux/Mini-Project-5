@@ -1,4 +1,4 @@
-# Mini Project 05: Advanced SQL - Window Functions & Time-Series Analytics
+# Mini Project 05: Advanced SQL - Window Functions
 
 ## Project Overview
 This project demonstrates advanced SQL analytical techniques using the classicmodels relational database. The primary objective is to execute complex calculations—including price hierarchies, customer lifetime payment tracking, month-over-month growth rates, and moving averages.
