@@ -1,7 +1,7 @@
 # Mini Project 05: Advanced SQL - Window Functions & Time-Series Analytics
 
 ## Project Overview
-This project demonstrates advanced SQL analytical techniques using the classicmodels relational database. The primary objective is to execute complex calculations—including price hierarchies, customer lifetime payment tracking, month-over-month growth rates, and rolling moving averages.
+This project demonstrates advanced SQL analytical techniques using the classicmodels relational database. The primary objective is to execute complex calculations—including price hierarchies, customer lifetime payment tracking, month-over-month growth rates, and moving averages.
 
 ---
 
@@ -27,6 +27,6 @@ A CTE creates a temporary named result set that exists only within the execution
 
 ### 5. Time-Series Windowing (LAG, LEAST)
 * **LAG(column, offset)**: Accesses data from a preceding row at a specified offset without requiring a self-JOIN. Used to pull previous month revenue for growth comparisons.
-* **LEAST(arg1, arg2, ...)**: Returns the smallest value among the provided arguments. Used to dynamically scale the rolling average denominator during initial months (dividing by 1 in Month 1, 2 in Month 2, and capping at 3 for Month 3 onwards).
+* **LEAST(arg1, arg2, ...)**: Returns the smallest value among the provided arguments. Used to dynamically scale the moving average denominator during initial months (dividing by 1 in Month 1, 2 in Month 2, and capping at 3 for Month 3 onwards).
 
 ---
