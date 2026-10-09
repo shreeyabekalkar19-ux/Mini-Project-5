@@ -8,7 +8,7 @@ This project demonstrates advanced SQL analytical techniques using the `classicm
 ## Detailed SQL Concepts Explained
 
 ### 1. Window Functions
-**Window Functions** perform calculations across a set of rows while **retaining individual row identities**. This allows you to display detailed attribute data alongside aggregated metrics in the same output row.
+Window Functions perform calculations across a set of rows while retaining individual row identities. This allows you to display detailed attribute data alongside aggregated metrics in the same output row.
 
 ### 2. 2 Kinds of Window Functions
 * **`PARTITION BY`**: Divides the query result set into partitions (subsets). The window function is applied to each partition separately, resetting calculations when crossing partition boundaries.
@@ -17,11 +17,11 @@ This project demonstrates advanced SQL analytical techniques using the `classicm
 ### 3. Ranking Functions Breakdown (`ROW_NUMBER`, `RANK`, `DENSE_RANK`)
 When ranking data with identical values (ties), each function behaves differently.
 * **`ROW_NUMBER()`**: Assigns a unique, sequential integer to every row starting at 1. It strictly avoids ties by assigning arbitrary order among identical values.
-* **`RANK()`**: Assigns identical ranks to tied values, but **skips subsequent rank numbers** to maintain position count.
-* **`DENSE_RANK()`**: Assigns identical ranks to tied values **without skipping subsequent numbers**.
+* **`RANK()`**: Assigns identical ranks to duplicate values, but skips subsequent rank numbers to maintain position count.
+* **`DENSE_RANK()`**: Assigns identical ranks to duplicate values without skipping subsequent numbers.
 
-### 4. Common Table Expressions (CTEs) & The `WITH` Clause
-A **CTE** creates a temporary named result set that exists only within the execution scope of a single query. CTEs are used here to:
+### 4. Common Table Expressions (CTEs), `WITH`
+A CTE creates a temporary named result set that exists only within the execution scope of a single query. CTEs are used here to:
 1. Break complex multi-stage calculations into readable steps.
 2. Bypassing SQL order-of-execution limitations.
 
