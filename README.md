@@ -9,7 +9,7 @@ This project demonstrates advanced SQL analytical techniques using the classicmo
 
 ### 1. Window Functions
 Window Functions perform calculations across a set of rows while retaining individual row identities. This allows you to display detailed attribute data alongside aggregated metrics in the same output row.
-### 2 Kinds of Window Functions
+#### 2 Kinds of Window Functions
 * **PARTITION BY**: Divides the query result set into partitions (subsets). The window function is applied to each partition separately, resetting calculations when crossing partition boundaries.
 * **ORDER BY**: Defines the logical sequence of rows within each partition. This is critical for sequential operations such as ranking items by price or calculating chronological running totals.
 
