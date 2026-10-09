@@ -5,7 +5,7 @@ This project demonstrates advanced SQL analytical techniques using the classicmo
 
 ---
 
-## Detailed SQL Concepts Explained
+## SQL Concepts
 
 ### 1. Window Functions
 Window Functions perform calculations across a set of rows while retaining individual row identities. This allows you to display detailed attribute data alongside aggregated metrics in the same output row.
